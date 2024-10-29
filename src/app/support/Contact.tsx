@@ -10,23 +10,23 @@ const Contact = () => {
         <h3 className='text-5xl font-semibold mt-3'>Get in Touch</h3>
         <div className='w-20 h-1 bg-[#24a8e0] mt-5'></div>
         <div className='mt-8 flex flex-col justify-center'>
-            <div className='mt-6 inline-flex justify-left items-center'>
-                <div className='w-14 h-14 rounded-full flex justify-center items-center bg-[#8cc63e] text-white text-4xl'><MdPhone /></div>
-                <div className='ml-8'>
+            <div className='mt-6 flex flex-col justify-cente md:inline-flex md:justify-left md:flex-row items-center'>
+                <div className='w-14 h-14 mb-6 md:mb-0 md:mt-1 rounded-full flex justify-center items-center bg-[#8cc63e] text-white text-4xl'><MdPhone /></div>
+                <div className='md:ml-8'>
                     <p className='font-bold text-xl'>Call</p>
                     <p className='text-gray-500'>+1-408-579-9990</p>
                 </div>
             </div>
-            <div className='mt-6 inline-flex justify-left items-center'>
-                <div className='w-14 h-14 rounded-full flex justify-center items-center bg-[#8cc63e] text-white text-4xl'><HiOutlineMail /></div>
-                <div className='ml-8'>
+            <div className='mt-6 flex flex-col justify-cente md:inline-flex md:justify-left md:flex-row items-center'>
+                <div className='w-14 h-14 mb-6 md:mb-0 md:mt-1 rounded-full flex justify-center items-center bg-[#8cc63e] text-white text-4xl'><HiOutlineMail /></div>
+                <div className='md:ml-8'>
                     <p className='font-bold text-xl'>Email</p>
                     <p className='text-gray-500'>info@workstory.io</p>
                 </div>
             </div>
         </div>
       </div>
-      <div className='my-6 md:absolute md:top-10 md:right-80'>
+      <div className='my-6 px-4 md:absolute md:top-10 md:right-80'>
         <div className='bg-white w-[600px] rounded-xl border border-gray-200 shadow-md'>
             <form action="" className='p-10'>
                 <h4 className='text-2xl font-semibold'>Fill the Form below</h4>
