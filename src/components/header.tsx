@@ -1,8 +1,15 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <nav className="bg-[#f7f7f7] fixed w-full z-20 top-0 start-0 border-b border-[#f7f7f7]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-10 lg:px-24 p-6">
@@ -11,24 +18,24 @@ const Navbar = () => {
             src="/images/Logo-1.png" 
             className="h-9" 
             alt="Work Story Logo" 
-            width={50} // Set according to your design
-            height={36} // Set according to your design
+            width={50} 
+            height={36} 
           />
           <Image 
             src="/images/logoname.png" 
             className="h-9" 
             alt="Work Story Name" 
-            width={170} // Set according to your design
-            height={36} // Set according to your design
+            width={170} 
+            height={36} 
           />
         </Link>
         <div className="flex md:order-1 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
-            data-collapse-toggle="navbar-sticky"
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            onClick={toggleMenu}
             aria-controls="navbar-sticky"
-            aria-expanded="false"
+            aria-expanded={isOpen}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -49,7 +56,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:align-middle md:order-1"
+          className={`items-center justify-between w-full md:flex md:w-auto md:align-middle md:order-1 ${isOpen ? 'block' : 'hidden'}`}
           id="navbar-sticky"
         >
           <ul className="flex flex-col justify-center align-middle p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-lg">

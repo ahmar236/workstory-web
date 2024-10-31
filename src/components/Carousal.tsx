@@ -55,28 +55,28 @@ const Carousel = () => {
     };
 
   return (
-    <div className="relative w-full h-auto md:h-[560px] mx-auto md:mx-36 bg-white bg-opacity-90 my-10 md:my-20 align-middle text-center md:text-left overflow-hidden">
+    <div className="relative w-full h-auto md:h-[560px] block mx-auto md:mx-36 bg-white bg-opacity-90 my-10 md:my-20 align-middle text-center md:text-left overflow-hidden">
       <div
         className="flex transition-transform duration-1000"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="w-full flex flex-col-reverse md:flex-row justify-center align-center gap-5 text-center md:text-left md:gap-30 h-auto md:h-[520px] flex-shrink-0">
+          <div key={index} className="w-full flex flex-col-reverse md:flex-row justify-center items-center gap-5 text-center md:text-left md:gap-30 h-auto md:h-[520px] flex-shrink-0 mx-auto">
             <div className="flex flex-col justify-center align-center items-center md:items-start h-auto w-[560px] md:w-[640px] p-8 md:p-10">
-              <h2 className="text-xl md:text-4xl font-bold mb-2 md:mb-6">{slide.heading}</h2>
+              <h2 className="text-lg md:text-4xl font-bold mb-2 md:mb-6">{slide.heading}</h2>
               <div className='h-1 w-28 mb-2 md:mb-10 bg-[#eca30b]'></div>
               <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-              <p className="text-left font-normal mt-2 text-sm md:text-base mb-2 md:mb-6">{slide.text1}</p>
+              <p className="text-left font-normal mt-2 text-xs md:text-base mb-2 md:mb-6">{slide.text1}</p>
               {slide.text2 && (
                 <>
                   <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-                  <p className="text-left font-normal mt-2 text-sm md:text-base mb-2 md:mb-6">{slide.text2}</p>
+                  <p className="text-left font-normal mt-2 text-xs md:text-base mb-2 md:mb-6">{slide.text2}</p>
                 </>
               )}
               {slide.text3 && (
                 <>
                   <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-                  <p className="text-left font-normal mt-2 text-sm md:text-base mb-2 md:mb-6">{slide.text3}</p>
+                  <p className="text-left font-normal mt-2 text-xs md:text-base mb-2 md:mb-6">{slide.text3}</p>
                 </>
               )}
               <Link href='#' className='px-8 py-3 bg-[#8cc63f] text-white text-xs md:text-sm w-60 md:w-80 text-center rounded-2xl mt-2 md:mt-6'>{slide.button}</Link>
