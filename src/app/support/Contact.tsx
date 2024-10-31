@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi"
 
 const Contact = () => {
   return (
-    <div className='flex justify-center items-center flex-col md:flex-none md:justify-start md:items-start md:relative'>
+    <div className='w-full flex justify-center items-center flex-col md:flex-none md:justify-start md:items-start md:relative'>
       <div className='flex flex-col justify-center text-center items-center md:flex-none md:text-left md:items-start pt-8 md:pt-[80px] px-5 md:px-72 pb-8 md:pb-[250px]'>
         <p className='font-semibold text-xl text-[#8cc63e]'>Contact Us</p>
         <h3 className='text-5xl font-semibold mt-3'>Get in Touch</h3>
@@ -26,18 +26,18 @@ const Contact = () => {
             </div>
         </div>
       </div>
-      <div className='my-6 px-4 w-full mx-auto md:absolute md:top-10 md:right-80'>
-        <div className='bg-white w-full md:w-[600px] rounded-xl border border-gray-200 shadow-md'>
+      <div className='my-6 px-4 w-full mx-auto'>
+        <div className='bg-white w-full md:w-[600px] rounded-xl border border-gray-200 shadow-md  md:absolute md:top-40 md:right-36'>
             <form action="" className='p-5 w-full md:p-10'>
                 <h4 className='text-xl md:text-2xl font-semibold'>Fill the Form below</h4>
-                <div className='flex gap-x-2 md:gap-x-5'>
-                    <div className="my-3">
+                <div className='flex w-full gap-x-2 md:gap-x-5 my-3'>
+                    <div className="w-full">
                         <label htmlFor="name" className="block mb-2 text-sm md:text-base font-medium text-gray-900">Name</label>
-                        <input type="name" id="name" className="border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:border-blue-500 block w-[220px] md:w-[250px] p-2.5 " placeholder="Your Name" required />
+                        <input type="name" id="name" className="border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:border-blue-500 block w-full p-2.5 " placeholder="Your Name" required />
                     </div>
-                    <div className="my-3">
+                    <div className="w-full">
                         <label htmlFor="email" className="block mb-2 text-sm md:text-base font-medium text-gray-900">Email</label>
-                        <input type="email" id="email" className="border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:border-blue-500 block w-[220px] md:w-[250px] p-2.5 " placeholder="Your Email" required />
+                        <input type="email" id="email" className="border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:border-blue-500 block w-full p-2.5 " placeholder="Your Email" required />
                     </div>
                 </div>
                 <div className="my-3">

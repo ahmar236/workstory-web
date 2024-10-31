@@ -120,7 +120,7 @@ const PricingTable = () => {
   ];
 
   return (
-    <div className="px-2 ml-2 my-8 container lg:my-20 w-full lg:w-2/3 text-gray-500 shadow-lg overflow-x-auto">
+    <div className="px-2 ml-2 my-8 md:mx-auto container lg:my-20 w-full lg:w-2/3 text-gray-500 shadow-lg overflow-x-auto">
       <table className="w-full text-left table-fixed md:table-fixed">
         <thead>
           <tr>
