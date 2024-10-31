@@ -120,8 +120,8 @@ const PricingTable = () => {
   ];
 
   return (
-    <div className="mx-auto my-8 sm:my-20 w-full sm:w-4/5 lg:w-2/3 text-gray-500 shadow-lg">
-      <table className="w-full text-left table-fixed">
+    <div className="px-2 ml-2 my-8 container lg:my-20 w-full lg:w-2/3 text-gray-500 shadow-lg overflow-x-auto">
+      <table className="w-full text-left table-fixed md:table-fixed">
         <thead>
           <tr>
             {pricingHead.map((col, index) => (
@@ -131,7 +131,7 @@ const PricingTable = () => {
                 style={{
                   backgroundColor: col.bg || '',
                   color: col.bg ? '#f2f2f2' : '#000',
-                  padding: index === 2 ? '20px' : '12px',
+                  padding: index === 2 ? '12px' : '8px',
                   textAlign: 'center',
                   borderRadius: '20px 20px 0px 0px',
                 }}
@@ -144,7 +144,7 @@ const PricingTable = () => {
         <tbody>
           {Object.keys(pricingBody[0]).map((key, rowIndex) => (
             <tr key={rowIndex}>
-              <td className="p-2 sm:p-4 text-xs sm:text-sm lg:text-base border" 
+              <td className="p-2 lg:p-4 text-xs sm:text-sm lg:text-base border" 
                 style={{
                   backgroundColor: `${rowIndex % 2 === 0 ? '#f5f5f5' : ''}`,
                 }}
