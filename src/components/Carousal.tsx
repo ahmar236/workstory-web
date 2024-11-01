@@ -66,17 +66,17 @@ const Carousel = () => {
               <h2 className="text-base md:text-2xl lg:text-4xl md:font-bold mb-2 md:mb-6">{slide.heading}</h2>
               <div className='h-0.5 md:h-1 w-28 mb-2 md:mb-10 bg-[#eca30b]'></div>
               <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-              <p className="text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text1}</p>
+              <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text1}</p>
               {slide.text2 && (
                 <>
                   <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-                  <p className="text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text2}</p>
+                  <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text2}</p>
                 </>
               )}
               {slide.text3 && (
                 <>
                   <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-                  <p className="text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text3}</p>
+                  <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text3}</p>
                 </>
               )}
               <Link href='#' className='px-8 py-3 bg-[#8cc63f] text-white text-xs md:text-sm w-60 md:w-80 text-center rounded-2xl mt-2 md:mt-6'>{slide.button}</Link>
