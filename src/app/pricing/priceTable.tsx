@@ -104,7 +104,7 @@ const PricingTable = () => {
     {
       head: (
         <>
-          Pro <br /> ($99.99/user/mo)
+          Pro <br /> ($99.99/ user/mo)
         </>
       ),
       bg: '#8cc63e',
@@ -112,7 +112,7 @@ const PricingTable = () => {
     {
       head: (
         <>
-          Advanced <br /> ($299.99/user/mo)
+          Advanced <br /> ($299.99/ user/mo)
         </>
       ),
       bg: '#24a8e0',
@@ -120,14 +120,14 @@ const PricingTable = () => {
   ];
 
   return (
-    <div className="px-2 ml-2 my-8 md:mx-auto container lg:my-20 w-full lg:w-2/3 text-gray-500 shadow-lg overflow-x-auto">
-      <table className="w-full text-left table-fixed md:table-fixed">
+    <div className="px-4 ml-2 my-8 lg:my-20 mx-auto flex justify-center w-full lg:w-2/3 text-gray-500 shadow-lg">
+      <table className="w-full mx-auto table-fixed">
         <thead>
           <tr>
             {pricingHead.map((col, index) => (
               <th
                 key={index}
-                className="text-xs sm:text-sm lg:text-xl"
+                className="text-xs md:text-sm lg:text-xl"
                 style={{
                   backgroundColor: col.bg || '',
                   color: col.bg ? '#f2f2f2' : '#000',

@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       <div className='h-16 w-full bg-white px-20 lg:px-56 py-6 flex justify-between'>
         <div>
-          <p className='font-thin lg:font-regular text-xs lg:text-sm'>© 2023 WorkStory.io. All Rights Reserved.</p>
+          <p className='font-thin lg:font-regular text-[10px] md:text-sm'>© 2023 WorkStory.io. All Rights Reserved.</p>
         </div>
         <div className="flex gap-3 text-sm md:gap-8 lg:text-lg md:px-4">
           <Link href='#'>

@@ -3,7 +3,7 @@ import PriceTable from "./priceTable"
 
 const Pricing = () => {
   return (
-    <div>
+    <div className="">
         <Banner />
         <PriceTable />
     </div>

@@ -5,7 +5,7 @@ import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12 md:p-36 bg-no-repeat bg-fixed bg-center bg-opacity-10"
+    <main className="flex min-h-screen flex-col items-center justify-between p-2 lg:p-36 bg-no-repeat bg-fixed bg-center bg-opacity-10"
     style={{ backgroundImage: "url('/images/world-3.png')" }}
     >
       <Carousel />
