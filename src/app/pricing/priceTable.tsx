@@ -120,8 +120,8 @@ const PricingTable = () => {
   ];
 
   return (
-    <div className="px-4 ml-2 my-8 lg:my-20 mx-auto flex justify-center w-full lg:w-2/3 text-gray-500 shadow-lg">
-      <table className="w-full mx-auto table-fixed">
+    <div className="px-4 ml-2 my-8 lg:my-20 flex justify-center align-middle content-center w-full ">
+      <table className="w-full md:w-2/3 mx-auto table-fixed self-center md:table-fixed text-gray-500 shadow-lg">
         <thead>
           <tr>
             {pricingHead.map((col, index) => (

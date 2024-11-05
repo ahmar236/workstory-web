@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from './Banner'
 import Contact from './Contact'
-import GoogleMap from './googleMap'
+// import GoogleMap from './googleMap'
 
 
 
@@ -11,7 +11,7 @@ const page = () => {
     <div>
       <Banner />
       <Contact />
-      <GoogleMap />
+      {/* <GoogleMap /> */}
     </div>
   )
 }

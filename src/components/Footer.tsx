@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -37,8 +37,8 @@ const Footer = () => {
         <div>
           <p className='font-thin lg:font-regular text-[10px] md:text-sm'>© 2023 WorkStory.io. All Rights Reserved.</p>
         </div>
-        <div className="flex gap-3 text-sm md:gap-8 lg:text-lg md:px-4">
-          <Link href='#'>
+        <div className="flex gap-3 text-sm md:gap-8 lg:text-xl md:px-4">
+          {/* <Link href='#'>
             <FaInstagram className='hover:scale-125 duration-150'/>
           </Link>
           <Link href='#'>
@@ -49,6 +49,9 @@ const Footer = () => {
           </Link>
           <Link href='#'>
             <FaYoutube className='hover:scale-125 duration-150' />
+          </Link> */}
+          <Link href='https://www.linkedin.com/company/workstory-io'>
+            <FaLinkedin className='hover:scale-125 duration-150' />
           </Link>
         </div>
       </div>

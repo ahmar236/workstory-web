@@ -65,19 +65,21 @@ const Carousel = () => {
             <div className="flex flex-col justify-center align-center items-center md:items-start h-auto w-full md:w-[640px] p-8 md:p-10">
               <h2 className="text-base md:text-2xl lg:text-4xl md:font-bold mb-2 md:mb-6">{slide.heading}</h2>
               <div className='h-0.5 md:h-1 w-28 mb-2 md:mb-10 bg-[#eca30b]'></div>
-              <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
-              <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text1}</p>
+              <div className='flex items-start gap-x-2'>
+                <div className='w-4 md:w-5 h-4 md:h-5 mt-2 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
+                <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text1}</p>
+              </div>
               {slide.text2 && (
-                <>
-                  <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
+                <div className='flex items-start gap-x-2'>
+                  <div className='w-4 md:w-5 h-4 md:h-5 mt-2 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
                   <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text2}</p>
-                </>
+                </div>
               )}
               {slide.text3 && (
-                <>
-                  <div className='w-4 md:w-5 h-4 md:h-5 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
+                <div className='flex items-start gap-x-2'>
+                  <div className='w-4 md:w-5 h-4 md:h-5 mt-2 rounded-full bg-[#009368] text-white text-center text-base md:text-xl p-0'><TiTick /></div>
                   <p className="text-center md:text-left font-normal mt-2 text-[10px] md:text-base mb-2 md:mb-6">{slide.text3}</p>
-                </>
+                </div>
               )}
               <Link href='#' className='px-8 py-3 bg-[#8cc63f] text-white text-xs md:text-sm w-60 md:w-80 text-center rounded-2xl mt-2 md:mt-6'>{slide.button}</Link>
             </div>

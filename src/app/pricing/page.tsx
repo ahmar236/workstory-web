@@ -3,7 +3,7 @@ import PriceTable from "./priceTable"
 
 const Pricing = () => {
   return (
-    <div className="">
+    <div className="md:text-center md:mx-auto">
         <Banner />
         <PriceTable />
     </div>
